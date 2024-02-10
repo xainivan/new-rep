@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title> Кондитерська </title>
+	<style>
+		h1 {
+			text-align: center;
+		}
+		html, body {
+			height: 100%;
+		}
+		html {
+			display: table;
+			margin: auto;
+  			scroll-behavior: smooth;
+		}
+		.body {
+			display: table-cell;
+			vertical-align: middle;
+			
+		}
+		.card-description {
+			margin: 5px 5px;
+		}
+		.card {
+			width: 690px;
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			background: rgb(255, 245, 204);
+			border: 1px solid brown;
+			margin: 15px 15px;
+		}
+		img {
+			width: 50%;
+		}
+		.card-bottom {
+			display: flex;
+			justify-content: space-between;
+			margin: 15px 15px;
+		}
+		.button { 
+			width: 32px;
+			height: 22px;
+		}
+		.menu {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+		}
+		.links {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			vertical-align: middle;
+		}
+		header {
+			background-color: bisque;
+			padding: 20px;
+		}
+		#myBtn {
+  			display: none;
+  			position: fixed;
+  			bottom: 20px;
+  			right: 30px;
+  			z-index: 99;
+  			font-size: 18px;
+  			border: none;
+  			outline: none;
+  			background-color: rgba(255, 191, 0, 0.935);
+  			color: white;
+  			cursor: pointer;
+  			padding: 15px;
+  			border-radius: 4px;
+		}
+
+		#myBtn:hover {
+  			background-color: rgba(255, 191, 0, 0.801);
+		}
+	</style>
+</head>
+<body>
+	<button onclick="topFunction()" id="myBtn" title="Go to top">To top</button>
+	<header>
+		<h1>Кондитерська</h1>
+		<div class="links"> 
+			<a href="#torti">Торти</a>
+			<a href="#desert">Інші десерти</a>
+			<a href="action.html">Акція</a>
+		</div>
+	</header>
+	<div class="menu">
+	
+		<div class="card", id="torti">
+			<div class="card-img">
+				<img src="https://vatsak.com.ua/image/cache/catalog/products/Tortu/PORTC%D0%86JN%D0%86/Tof%D1%96/Tofi_porc_Icon-562x429.jpg">
+			</div>
+			<div class="card-description">
+				<h3>Торт "Тофі"</h3>
+				<p>1 кг.</p>
+			</div>
+			<div class="card-bottom">
+				<span>407 грн</span>
+				<div class="button" href="cake.html">
+				<button class="d-inline-block rounded-1 btn btn-primary border-0 p-3" aria-label="Add" data-testid="mobile-counter" style="line-height: 0;"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" class="fill-btn-font" d="M9 1C9 0.447715 8.55229 0 8 0C7.44772 0 7 0.447715 7 1V7H1C0.447715 7 0 7.44771 0 8C0 8.55228 0.447715 9 1 9H7V15C7 15.5523 7.44772 16 8 16C8.55229 16 9 15.5523 9 15V9H15C15.5523 9 16 8.55229 16 8C16 7.44772 15.5523 7 15 7H9V1Z" fill="grey"></path></svg></button>
+				</div>
+			</div>
+		</div>
+	
+		<div class="card">
+			<div class="card-img">
+				<img src="https://vatsak.com.ua/image/cache/catalog/products/Tortu/PORTC%D0%86JN%D0%86/Smail/Smail-562x429.jpg">
+			</div>
+			<div class="card-description">
+				<h3>Торт "Смайл"</h3>
+				<p>1,8 кг.</p>
+			</div>
+			<div class="card-bottom">
+				<span>452 грн</span>
+				<div class="button" href="cake.html">
+				<button class="d-inline-block rounded-1 btn btn-primary border-0 p-3" aria-label="Add" data-testid="mobile-counter" style="line-height: 0;"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" class="fill-btn-font" d="M9 1C9 0.447715 8.55229 0 8 0C7.44772 0 7 0.447715 7 1V7H1C0.447715 7 0 7.44771 0 8C0 8.55228 0.447715 9 1 9H7V15C7 15.5523 7.44772 16 8 16C8.55229 16 9 15.5523 9 15V9H15C15.5523 9 16 8.55229 16 8C16 7.44772 15.5523 7 15 7H9V1Z" fill="grey"></path></svg></button>
+				</div>
+			</div>
+		</div>
+	
+		<div class="card">
+			<div class="card-img">
+				<img src="https://vatsak.com.ua/image/cache/catalog/products/Tortu/PLASTIKOVA%20UPAKOVKA/Edem/Edem_Icon-562x429.jpg">
+			</div>
+			<div class="card-description">
+				<h3>Торт "Едем"</h3>
+				<p>0,45 кг.</p>
+			</div>
+			<div class="card-bottom">
+				<span>120 грн</span>
+				<div class="button" href="cake.html">
+				<button class="d-inline-block rounded-1 btn btn-primary border-0 p-3" aria-label="Add" data-testid="mobile-counter" style="line-height: 0;"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" class="fill-btn-font" d="M9 1C9 0.447715 8.55229 0 8 0C7.44772 0 7 0.447715 7 1V7H1C0.447715 7 0 7.44771 0 8C0 8.55228 0.447715 9 1 9H7V15C7 15.5523 7.44772 16 8 16C8.55229 16 9 15.5523 9 15V9H15C15.5523 9 16 8.55229 16 8C16 7.44772 15.5523 7 15 7H9V1Z" fill="grey"></path></svg></button>
+				</div>
+			</div>
+		</div>
+	
+		<div class="card">
+			<div class="card-img">
+				<img src="https://vatsak.com.ua/image/cache/catalog/custom_products/Medovuk/Medovuk_Icon1-562x429.jpg">
+			</div>
+			<div class="card-description">
+				<h3>Торт "Медовик"</h3>
+				<p>0,65 кг.</p>
+			</div>
+			<div class="card-bottom">
+				<span>299 грн</span>
+				<div class="button" href="cake.html">
+				<button class="d-inline-block rounded-1 btn btn-primary border-0 p-3" aria-label="Add" data-testid="mobile-counter" style="line-height: 0;"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" class="fill-btn-font" d="M9 1C9 0.447715 8.55229 0 8 0C7.44772 0 7 0.447715 7 1V7H1C0.447715 7 0 7.44771 0 8C0 8.55228 0.447715 9 1 9H7V15C7 15.5523 7.44772 16 8 16C8.55229 16 9 15.5523 9 15V9H15C15.5523 9 16 8.55229 16 8C16 7.44772 15.5523 7 15 7H9V1Z" fill="grey"></path></svg></button>
+				</div>
+			</div>
+		</div>
+		<div class="card", id="desert">
+			<div class="card-img">
+				<img src="https://www.sladkiymir.com.ua/storage/images/spring_24.jpg">
+			</div>
+			<div class="card-description">
+				<h3>Шоколад "Spring"</h3>
+			</div>
+			<div class="card-bottom">
+				<span>29 грн</span>
+				<div class="button" href="cake.html">
+				<button class="d-inline-block rounded-1 btn btn-primary border-0 p-3" aria-label="Add" data-testid="mobile-counter" style="line-height: 0;"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" class="fill-btn-font" d="M9 1C9 0.447715 8.55229 0 8 0C7.44772 0 7 0.447715 7 1V7H1C0.447715 7 0 7.44771 0 8C0 8.55228 0.447715 9 1 9H7V15C7 15.5523 7.44772 16 8 16C8.55229 16 9 15.5523 9 15V9H15C15.5523 9 16 8.55229 16 8C16 7.44772 15.5523 7 15 7H9V1Z" fill="grey"></path></svg></button>
+				</div>
+			</div>
+		</div>
+		<div class="card">
+			<div class="card-img">
+				<img src="https://www.sladkiymir.com.ua/storage/images/Pate_orange_140.jpg">
+			</div>
+			<div class="card-description">
+				<h3>Мармелад</h3>
+			</div>
+			<div class="card-bottom">
+				<span>2999 грн</span>
+				<div class="button" href="cake.html">
+				<button class="d-inline-block rounded-1 btn btn-primary border-0 p-3" aria-label="Add" data-testid="mobile-counter" style="line-height: 0;"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" class="fill-btn-font" d="M9 1C9 0.447715 8.55229 0 8 0C7.44772 0 7 0.447715 7 1V7H1C0.447715 7 0 7.44771 0 8C0 8.55228 0.447715 9 1 9H7V15C7 15.5523 7.44772 16 8 16C8.55229 16 9 15.5523 9 15V9H15C15.5523 9 16 8.55229 16 8C16 7.44772 15.5523 7 15 7H9V1Z" fill="grey"></path></svg></button>
+				</div>
+			</div>
+		</div>
+		<div class="card">
+			<div class="card-img">
+				<img src="https://www.sladkiymir.com.ua/storage/images/5f57867cbbfeddba018062fae40aef97.jpg">
+			</div>
+			<div class="card-description">
+				<h3>Choco Pizza</h3>
+			</div>
+			<div class="card-bottom">
+				<span>999 грн</span>
+				<div class="button" href="cake.html">
+				<button class="d-inline-block rounded-1 btn btn-primary border-0 p-3" aria-label="Add" data-testid="mobile-counter" style="line-height: 0;"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" class="fill-btn-font" d="M9 1C9 0.447715 8.55229 0 8 0C7.44772 0 7 0.447715 7 1V7H1C0.447715 7 0 7.44771 0 8C0 8.55228 0.447715 9 1 9H7V15C7 15.5523 7.44772 16 8 16C8.55229 16 9 15.5523 9 15V9H15C15.5523 9 16 8.55229 16 8C16 7.44772 15.5523 7 15 7H9V1Z" fill="grey"></path></svg></button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer>
+		<h3>АДРЕСА ОФІСУ</h3>
+		<a>Україна, Вінницька область,
+		м. Могилів-Подільський,
+		вул. Вірменська, 4 </a>
+	</footer>
+
+	<script>
+		let mybutton = document.getElementById("myBtn");
+		
+		window.onscroll = function() {scrollFunction()};
+		
+		function scrollFunction() {
+		  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+			mybutton.style.display = "block";
+		  } else {
+			mybutton.style.display = "none";
+		  }
+		}
+		
+		function topFunction() {
+		  document.body.scrollTop = 0;
+		  document.documentElement.scrollTop = 0;
+		}
+		</script>
+		
+</body>
+</html>
